@@ -1,6 +1,6 @@
-import { decorator } from './decorator.js'
+import { decorator } from "./decorator.js";
 
 window.onload = () => {
-    const app = document.getElementById('hello') as HTMLElement;
+    const app = document.getElementById("hello") as HTMLElement;
     app.innerHTML = decorator(app.innerHTML);
 };

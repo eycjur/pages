@@ -11,3 +11,4 @@ js製の各種ツールをgithub pagesで公開する。
 ### github pages
 - [GitHub Actions と GitHub Pages で yml をフォルダに入れておくだけのお手軽デプロイ](https://blog.ojisan.io/gha-ghpage/)
 - [React Next アプリを GitHub Actions で GitHub Pages にデプロイ](https://qiita.com/peaceiris/items/9c569125b25fc090c515)
+- [TypeScript+Reactのプロジェクトでeslintの設定](https://zenn.dev/toshiokun/articles/878f1a55a4b95e)
