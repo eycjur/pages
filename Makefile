@@ -1,6 +1,6 @@
 
 all: lint test dev
-.phony: dev build
+.PHONY: dev build lint test
 
 dev:
 	yarn dev
