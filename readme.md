@@ -11,4 +11,9 @@ js製の各種ツールをgithub pagesで公開する。
 ### github pages
 - [GitHub Actions と GitHub Pages で yml をフォルダに入れておくだけのお手軽デプロイ](https://blog.ojisan.io/gha-ghpage/)
 - [React Next アプリを GitHub Actions で GitHub Pages にデプロイ](https://qiita.com/peaceiris/items/9c569125b25fc090c515)
+### リンター
 - [TypeScript+Reactのプロジェクトでeslintの設定](https://zenn.dev/toshiokun/articles/878f1a55a4b95e)
+### テスト
+- [JEST ドキュメント](https://jestjs.io/ja/docs/getting-started)
+- [TypeScript の単体テストで Jest 使おう](https://qiita.com/okazuki/items/991a068892e946531612)
+
