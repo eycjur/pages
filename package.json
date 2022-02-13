@@ -1,0 +1,26 @@
+{
+  "name": "pages",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "git@github.com:eycjur/pages.git",
+  "author": "eycjur <eycjur@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "clean": "rimraf ./public/js/",
+    "ttsc": "ttsc",
+    "watch": "ttsc --watch",
+    "cleanwatch": "run-s clean watch",
+    "serve": "sirv public --port 8080",
+    "build": "run-s clean ttsc",
+    "dev": "run-p cleanwatch serve"
+  },
+  "devDependencies": {
+    "rimraf": "^3.0.2",
+    "sirv-cli": "^2.0.2",
+    "typescript": "^4.5.5",
+    "yarn-run-all": "^3.1.1"
+  },
+  "dependencies": {
+    "ttypescript": "^1.5.13"
+  }
+}
