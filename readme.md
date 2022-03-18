@@ -6,6 +6,8 @@ js製の各種ツールをgithub pagesで公開する。
 - https://eycjur.github.io/pages/
 
 ## 参考文献
+### project template
+- [TypeScript-Node-Starter](https://github.com/microsoft/TypeScript-Node-Starter)
 ### yarn,tscの設定  
 - [2020/11版：TypeScript の開発環境を yarn で構築する](https://zenn.dev/junki555/articles/c21e6e74ea6ffcf074f8)
 ### github pages
@@ -16,4 +18,3 @@ js製の各種ツールをgithub pagesで公開する。
 ### テスト
 - [JEST ドキュメント](https://jestjs.io/ja/docs/getting-started)
 - [TypeScript の単体テストで Jest 使おう](https://qiita.com/okazuki/items/991a068892e946531612)
-
