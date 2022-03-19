@@ -15,7 +15,7 @@
     "test": "jest",
     "cleanwatch": "run-s clean watch",
     "build": "run-s clean ttsc",
-    "dev": "run-p cleanwatch serve"
+    "dev": "run-p cleanwatch"
   },
   "devDependencies": {
     "@types/jest": "^27.4.0",
