@@ -1,3 +1,9 @@
+export function notion2textile(input) {
+    input = markdown2xml(input);
+    input = xmlCareForNotion(input);
+    input = xml2textile(input);
+    return input;
+}
 export function markdown2xml(input) {
     let output = input;
     output = output.replace(/^(#{1,3})(?= )/gm, function (...args) {
@@ -68,7 +74,7 @@ export function xml2textile(input) {
     output = output.replace(/^ */gm, "");
     return output;
 }
-export function xmlCareForNotion(input) {
+function xmlCareForNotion(input) {
     let output = input;
     output = output.replace(/(\n( *)[^<\n]+?)\n(?=\n( *)[^ <])/gs, function (...args) {
         if (args[2].length > args[3].length) {
