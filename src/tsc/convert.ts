@@ -1,3 +1,10 @@
+export function notion2textile(input: string): string {
+  input = markdown2xml(input);
+  input = xmlCareForNotion(input);
+  input = xml2textile(input);
+  return input;
+}
+
 export function markdown2xml(input: string): string {
   let output: string = input;
 
@@ -138,7 +145,7 @@ export function xml2textile(input: string): string {
   return output;
 }
 
-export function xmlCareForNotion(input: string): string {
+function xmlCareForNotion(input: string): string {
   let output: string = input;
 
   // 文字行の後の改行を削除

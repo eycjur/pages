@@ -4,7 +4,7 @@ js製の各種ツールをgithub pagesで公開する。
 
 ## ページリンク
 - https://eycjur.github.io/pages/
-- [markdown2textile](https://eycjur.github.io/pages/markdown2textile.html)
+- [notion2textile](https://eycjur.github.io/pages/notion2textile.html)
 
 ## 参考文献
 ### project template

@@ -1,4 +1,4 @@
-import { markdown2xml, xml2textile, xmlCareForNotion } from "../src/tsc/convert";
+import { markdown2xml, xml2textile, notion2textile } from "../src/tsc/convert";
 
 test("headline", () => {
   let headlineMd: string = `
@@ -132,8 +132,8 @@ test("strikethrough", () => {
   expect(xml2textile(markdown2xml(strikethroughMd))).toBe(strikethroughTextile);
 });
 
-test("notion", () => {
-  let notionMd: string = `
+test("notion2textile", () => {
+  let textNotion: string = `
 ## 見出し2
 
 本文
@@ -155,7 +155,7 @@ test("notion", () => {
 
 文中に \`コード\` を書く
 `
-  let notionTextile: string = `
+  let textTextile: string = `
 h2. 見出し2
 
 本文
@@ -174,5 +174,5 @@ h2. 見出し2
 
 文中に @コード@ を書く
 `
-  expect(xml2textile(xmlCareForNotion(markdown2xml(notionMd)))).toBe(notionTextile);
+  expect(notion2textile(textNotion)).toBe(textTextile);
 });

@@ -1,8 +1,8 @@
-import { markdown2xml, xml2textile, xmlCareForNotion } from "./convert.js";
+import { notion2textile } from "./convert.js";
 
 function btnClick(obj: any = NaN): void {  // eslint-disable-line
-  const elemMarkdown: HTMLTextAreaElement = <HTMLTextAreaElement>(
-    document.getElementById("markdown-text")
+  const elemNotion: HTMLTextAreaElement = <HTMLTextAreaElement>(
+    document.getElementById("notion-text")
   );
   const elemTextile: HTMLTextAreaElement = <HTMLTextAreaElement>(
     document.getElementById("textile-text")
@@ -10,20 +10,18 @@ function btnClick(obj: any = NaN): void {  // eslint-disable-line
 
   elemTextile.value = "";
 
-  const markdownText: string = elemMarkdown.value;
-  const textileText: string = xml2textile(
-    xmlCareForNotion(markdown2xml(markdownText))
-  );
+  const notionText: string = elemNotion.value;
+  const textileText: string = notion2textile(notionText);
 
   elemTextile.value = textileText;
-  elemMarkdown.value = "";
+  elemNotion.value = "";
 
   navigator.clipboard.writeText(textileText);
 }
 
 document.addEventListener("DOMContentLoaded", function () {
-  const elemMarkdown: HTMLTextAreaElement = <HTMLTextAreaElement>(
-    document.getElementById("markdown-text")
+  const elemNotion: HTMLTextAreaElement = <HTMLTextAreaElement>(
+    document.getElementById("notion-text")
   );
   const button: HTMLButtonElement = <HTMLButtonElement>(
     document.getElementById("convert-button")
@@ -32,7 +30,7 @@ document.addEventListener("DOMContentLoaded", function () {
   // buttonクリック時の挙動
   button.addEventListener("click", btnClick);
   //ctrl+enter時の挙動
-  elemMarkdown.addEventListener("keydown", function (event) {
+  elemNotion.addEventListener("keydown", function (event) {
     if (event.key == "Enter" && event.ctrlKey) {
       btnClick();
     }
