@@ -10,7 +10,7 @@ on:
     types: [ opened, synchronize, reopened, closed ]
 
 jobs:
-  build:
+  gh-pages:
     runs-on: ubuntu-20.04
     concurrency:
       group: ${{ github.workflow }}-${{ github.ref }}
