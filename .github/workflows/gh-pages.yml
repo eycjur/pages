@@ -1,8 +1,7 @@
 name: GitHub Pages
 
 on:
-  pull_request:
-    types: [ opened, synchronize, reopened, closed ]
+  pull_request
 
 jobs:
   gh-pages:
