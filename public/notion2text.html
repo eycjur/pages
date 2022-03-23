@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script type="module" src="./js/notion2text.js"></script>
+  <title>notion2text</title>
+</head>
+
+<body>
+  <div class="container">
+    <h1>notion→text変換</h1>
+    <form>
+      <div class="form-group">
+        <label for="notion-text">notion</label>
+        <textarea class="form-control" id="notion-text" rows="3"></textarea>
+      </div>
+      <p>
+        <input type="button" id="convert-button" value="textに変換する">
+      </p>
+      <div class="form-group">
+        <label for="text-text">text</label>
+        <textarea class="form-control" id="text-text" rows="3"></textarea>
+      </div>
+    </form>
+  </div>
+</body>
+
+</html>
