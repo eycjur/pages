@@ -1,5 +1,5 @@
 import { notion2textile } from "./convert.js";
-function btnClick(obj = NaN) {
+function btnClickNotion2textile(obj = NaN) {
     const elemNotion = (document.getElementById("notion-text"));
     const elemTextile = (document.getElementById("textile-text"));
     elemTextile.value = "";
@@ -12,10 +12,10 @@ function btnClick(obj = NaN) {
 document.addEventListener("DOMContentLoaded", function () {
     const elemNotion = (document.getElementById("notion-text"));
     const button = (document.getElementById("convert-button"));
-    button.addEventListener("click", btnClick);
+    button.addEventListener("click", btnClickNotion2textile);
     elemNotion.addEventListener("keydown", function (event) {
         if (event.key == "Enter" && event.ctrlKey) {
-            btnClick();
+            btnClickNotion2textile();
         }
     });
 });
