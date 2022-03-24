@@ -19,7 +19,7 @@ function notion2text(input: string): string {
   return output;
 }
 
-function btnClick(obj: any = NaN): void {  // eslint-disable-line
+function btnClickNotion2text(obj: any = NaN): void {  // eslint-disable-line
   const elemNotion: HTMLTextAreaElement = <HTMLTextAreaElement>(
     document.getElementById("notion-text")
   );
@@ -47,11 +47,11 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   // buttonクリック時の挙動
-  button.addEventListener("click", btnClick);
+  button.addEventListener("click", btnClickNotion2text);
   //ctrl+enter時の挙動
   elemNotion.addEventListener("keydown", function (event) {
     if (event.key == "Enter" && event.ctrlKey) {
-      btnClick();
+      btnClickNotion2text();
     }
   });
 });
