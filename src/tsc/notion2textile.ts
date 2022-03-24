@@ -1,6 +1,6 @@
 import { notion2textile } from "./convert.js";
 
-function btnClick(obj: any = NaN): void {  // eslint-disable-line
+function btnClickNotion2textile(obj: any = NaN): void {  // eslint-disable-line
   const elemNotion: HTMLTextAreaElement = <HTMLTextAreaElement>(
     document.getElementById("notion-text")
   );
@@ -28,11 +28,11 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   // buttonクリック時の挙動
-  button.addEventListener("click", btnClick);
+  button.addEventListener("click", btnClickNotion2textile);
   //ctrl+enter時の挙動
   elemNotion.addEventListener("keydown", function (event) {
     if (event.key == "Enter" && event.ctrlKey) {
-      btnClick();
+      btnClickNotion2textile();
     }
   });
 });
