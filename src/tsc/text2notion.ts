@@ -6,7 +6,7 @@ function text2notion(input: string): string {
   return output;
 }
 
-function btnClick(obj: any = NaN): void {  // eslint-disable-line
+function btnClickText2Notion(obj: any = NaN): void {  // eslint-disable-line
   const elemText: HTMLTextAreaElement = <HTMLTextAreaElement>(
     document.getElementById("text-text")
   );
@@ -34,11 +34,11 @@ document.addEventListener("DOMContentLoaded", function () {
   );
 
   // buttonクリック時の挙動
-  button.addEventListener("click", btnClick);
+  button.addEventListener("click", btnClickText2Notion);
   //ctrl+enter時の挙動
   elemText.addEventListener("keydown", function (event) {
     if (event.key == "Enter" && event.ctrlKey) {
-      btnClick();
+      btnClickText2Notion();
     }
   });
 });

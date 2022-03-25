@@ -5,6 +5,9 @@ js製の各種ツールをgithub pagesで公開する。
 ## ページリンク
 - https://eycjur.github.io/pages/
 - [notion2textile](https://eycjur.github.io/pages/notion2textile.html)
+- [notion2text](https://eycjur.github.io/pages/notion2text.html)
+- [text2notion](https://eycjur.github.io/pages/text2notion.html)
+- [excel2tex](https://eycjur.github.io/pages/excel2tex.html)
 - [othello](https://eycjur.github.io/pages/othello.html)
 
 ## 参考文献
