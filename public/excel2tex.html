@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+  <script type="module" src="./js/excel2tex.js"></script>
+  <title>ExceltoTeX</title>
+  <style>
+    form {
+      padding: 1em;
+    }
+
+    textarea {
+      width: 100%;
+      height: 400px;
+    }
+  </style>
+
+</head>
+
+<body>
+  <div class="container container-excel text-center">
+    <h1>Excel形式からTeX形式に変換します</h4>
+    <form action="" id="form">
+      <div class="row">
+        <div class="col-6">
+          <textarea id="excel-text" autofocus></textarea>
+        </div>
+        <div class="col-6">
+          <textarea id="tex-text"></textarea>
+        </div>
+      </div>
+      <input type="checkbox" name="shrink-check" id="shrink-check">
+      <label for="shrink-check">縮小</label>
+      <input type="button" id="convert-button" class="px-1 m-1" id="btn" value="Convert(Ctrl+Enter)">
+      <input type="reset" class="px-1 m-1" value="Reset">
+      <p id="done-text"></p>
+    </form>
+  </div>
+</body>
+
+</html>
