@@ -1,4 +1,6 @@
-.DS_Store
 node_modules/
 public/js/
 coverage/
+
+.DS_Store
+yarn-error.log
