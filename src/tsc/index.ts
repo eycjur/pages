@@ -1,4 +1,4 @@
-import { decorator } from "./decorator.js";
+import { decorator } from "./decorator";
 
 window.onload = () => {
   const app = document.getElementById("hello") as HTMLElement;
