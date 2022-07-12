@@ -10,3 +10,5 @@ lint:
 	yarn eslint:fix
 test:
 	yarn test
+
+# サーバーへのアクセスはpubulicのhtmlファイルをlive serverで表示する
