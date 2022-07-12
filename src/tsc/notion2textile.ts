@@ -1,4 +1,4 @@
-import { notion2textile } from "./convert.js";
+import { notion2textile } from "./convert";
 
 function btnClickNotion2textile(obj: any = NaN): void {  // eslint-disable-line
   const elemNotion: HTMLTextAreaElement = <HTMLTextAreaElement>(
