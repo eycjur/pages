@@ -10,6 +10,17 @@ js製の各種ツールをgithub pagesで公開する。
 - [excel2tex](https://eycjur.github.io/pages/excel2tex.html)
 - [othello](https://eycjur.github.io/pages/othello.html)
 
+## Quick Start
+
+```bash
+npm install -g yarn
+yarn install --frozen-lockfile
+# 必要に応じてパッケージをアップデート
+# sudo yarn upgrade
+
+make
+```
+
 ## 参考文献
 ### project template
 - [TypeScript-Node-Starter](https://github.com/microsoft/TypeScript-Node-Starter)
